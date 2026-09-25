@@ -15,6 +15,8 @@ ALLOWED_ORIGINS = [
 DEFAULT_TIMEZONE = os.getenv("DEFAULT_TIMEZONE", "UTC").strip()
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").strip().upper()
 
+APP_NAME = os.getenv("APP_NAME", "Ticketmaster LLM API").strip()
+
 
 def active_llm_api_key() -> str:
     """
